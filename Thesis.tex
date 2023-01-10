@@ -1,0 +1,423 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\graphicspath{{Desktop}}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\begin{document}
+
+\section{Introduction}//
+\subsection{Background}//
+Oscillation damping in power systems refers to the process of reducing or eliminating oscillations, or rapid fluctuations, in the electrical frequency or voltage of a power system. Oscillations can occur in power systems due to a variety of factors, including the transmission of electrical power over long distances, changes in the load on the system, and the operation of certain types of electrical equipment. Damping oscillations is important because it helps to maintain the stability and reliability of the power system, and prevent damage to equipment and outages.
+
+Power systems consist of a complex network of transmission lines, transformers, generators, and loads, all of which are interconnected and interact with each other. The transmission of electrical power over long distances can introduce oscillations into the system, as the transmission lines have a certain amount of inductance and capacitance, which can cause the electrical current to oscillate. In addition, changes in the load on the system, such as the sudden starting or stopping of large motors, can also cause oscillations.\\
+\\\\\includegraphics[scale=1]{11.png}\\\\
+
+Oscillations in power systems can be harmful for a number of reasons. They can cause damage to equipment, such as generators, transformers, and transmission lines, leading to costly repairs and outages. In addition, oscillations can cause the electrical frequency or voltage to become unstable, leading to power quality issues for consumers. This can cause problems with sensitive electronic equipment, such as computers and medical devices, and can also cause issues with the operation of certain types of electrical equipment, such as motors.\\
+\begin{figure}[h]
+\centering
+
+//
+\includegraphics[scale=1]{1.jpg}
+//
+
+
+\end{figure}
+To address the issue of oscillations in power systems, various techniques have been developed to damp or eliminate these oscillations. One common method is the use of damping controllers, which are devices that are connected to the power system and can be used to adjust the electrical frequency or voltage in order to damp oscillations. There are several different types of damping controllers that can be used, including power system stabilizers (PSSs), static VAR compensators (SVCs), and static synchronous compensators (STATCOMs).
+
+Power system stabilizers (PSSs) are devices that are connected to the generator in a power system, and are used to adjust the electrical frequency of the system in order to damp oscillations. PSSs work by detecting oscillations in the system and adjusting the generator's excitation level in order to damp the oscillations.
+
+Static VAR compensators (SVCs) are devices that are used to adjust the reactive power in a power system in order to damp oscillations. SVCs work by using power electronics to vary the amount of reactive power that is injected into or absorbed from the power system, in order to damp oscillations.
+
+Static synchronous compensators (STATCOMs) are similar to SVCs, but instead of adjusting reactive power, they adjust the voltage of the power system in order to damp oscillations. STATCOMs work by using power electronics to vary the voltage of the power system, in order to damp oscillations.
+
+Another method of damping oscillations in power systems is the use of energy storage devices, such as flywheels or batteries. These devices can be used to absorb excess energy and damp oscillations in the system. Flywheels work by using the kinetic energy of a spinning rotor to absorb excess energy, while batteries work by storing excess energy in chemical form and releasing it back into the system as needed.
+
+In addition to these active methods of damping oscillations, there are also passive methods that can be used. One such method is the use of special protective relays that are designed to detect oscillations in the power system and automatically disconnect certain parts of the system in order to stop the oscillations. 
+\subsection{Problem Statement}//
+//Oscillation damping in power systems is an important aspect of maintaining the stability and reliability of the electrical grid. However, there are several problems that can arise when trying to damp oscillations in power systems.
+
+One major problem is the cost of implementing oscillation damping measures. Damping controllers, such as power system stabilizers (PSSs), static VAR compensators (SVCs), and static synchronous compensators (STATCOMs), can be expensive to install and maintain. In addition, energy storage devices, such as flywheels and batteries, can also be costly. These costs can be a barrier to implementing oscillation damping measures, particularly in developing countries or in areas where funding for power systems is limited.
+
+Another problem with oscillation damping is the issue of system complexity. Power systems are complex networks of transmission lines, transformers, generators, and loads, all of which are interconnected and interact with each other. Damping oscillations in such a complex system can be challenging, as it requires a detailed understanding of the system's dynamics and the ability to accurately model and predict the behavior of the system.
+
+In addition, oscillation damping measures can have unintended consequences, such as introducing additional oscillations into the system or affecting the stability of the system in other ways. For example, the use of damping controllers can sometimes result in over-damping, which can lead to stability issues. Similarly, the use of energy storage devices can sometimes lead to over-compensation, which can also cause stability issues.
+
+Finally, there is the issue of coordination and communication. In order to effectively damp oscillations in a power system, it is necessary to coordinate the actions of different devices and control centers within the system. This requires effective communication and coordination between these different entities, which can be challenging due to the complexity of the system and the large number of stakeholders involved.
+
+Overall, while oscillation damping is an important aspect of maintaining the stability and reliability of power systems, it is not without its challenges. It requires a careful balance of cost, complexity, and coordination in order to effectively damp oscillations and maintain the stability of the system.
+\subsection{Research motivation}//
+//The research motivation for oscillation damping in power systems is driven by the importance of maintaining the stability and reliability of the electrical grid. Oscillations, or rapid fluctuations, in the electrical frequency or voltage of a power system can cause a variety of problems, including damage to equipment, power quality issues for consumers, and problems with the operation of certain types of electrical equipment. Damping oscillations is therefore an important aspect of ensuring the stability and reliability of the power system.
+
+One major motivation for research in oscillation damping is the need to improve the efficiency and effectiveness of existing oscillation damping techniques. There are several techniques that are currently used to damp oscillations in power systems, including the use of damping controllers, such as power system stabilizers (PSSs), static VAR compensators (SVCs), and static synchronous compensators (STATCOMs), and the use of energy storage devices, such as flywheels and batteries. However, these techniques can be expensive to implement and maintain, and they may not always be effective in damping oscillations in all situations. Therefore, there is a need to research ways to improve the efficiency and effectiveness of these techniques, in order to make them more cost-effective and widely applicable.
+
+Another motivation for research in oscillation damping is the need to develop new oscillation damping techniques. As power systems become more complex and interconnected, the challenges of damping oscillations become more difficult to address. Therefore, there is a need to research and develop new oscillation damping techniques that can be used to effectively damp oscillations in these complex systems. This may involve the development of new technologies, such as advanced power electronics or new types of energy storage devices, or the use of advanced control algorithms and machine learning techniques to better understand and control the behavior of power systems.
+
+Finally, research in oscillation damping is motivated by the need to address the increasing demand for electricity, particularly in developing countries. As the world's population continues to grow and urbanize, the demand for electricity is expected to increase significantly. In order to meet this demand, it will be necessary to build new power plants and transmission lines, and to upgrade and expand existing power systems. This will likely lead to an increase in oscillations in power systems, as the transmission of electrical power over long distances and the operation of certain types of electrical equipment can introduce oscillations into the system. Therefore, there is a need to research ways to effectively damp these oscillations in order to ensure the stability and reliability of the power system.
+
+Overall, the research motivation for oscillation damping in power systems is driven by the need to maintain the stability and reliability of the electrical grid, to improve the efficiency and effectiveness of existing oscillation damping techniques, to develop new oscillation damping techniques for complex power systems, and to address the increasing demand for electricity.
+\subsection{Research Objective}//
+
+\subsection{Thesis Organization}//
+
+//The thesis has organized as follows:
+Chapter 2 focuses on the strategies, algorithms, and methodologies used by researchers
+for power system oscillation damping control when discussing the literature review.
+
+Chapter 1: Introduction
+Chapter 3 explains the methodology used in this research. It explains the fundamental
+concept of self-tuning controller. The detailed study and modelling of neural network
+(NN) and computationally efficient neural network (CENN), that is compatible with
+feedback linearizable controller (FBLC) is done. Later, this chapter explains the classical
+Levenberg-Marquardt (LM) algorithm and its modified version (CELM) in detail. The
+chapter ends with the explanation and derivation of feedback linearizable controller
+(FBLC).
+Chapter 4 compares the results between computationally efficient neural network
+(CENN) - classical Levenberg-Marquardt (LM) and computationally efficient neural
+network (CENN) - computationally efficient Levenberg-Marquardt (CELM) in terms
+of accuracy, convergence and computational time. The efficiency of online modified
+LM approach i.e. CELM for non-linear estimation is shown through a case study on a
+4-machine 2-area power system.
+Finally, Chapter 5 draws conclusions from this research and provides guidance for
+future research.
+\subsection{Thesis Contribution}//
+//In this study, a measurement-based controller i.e Feedback linearizable controller (FBLC),
+is designed to damp inter-area oscillations in the power system. To capture the nonlinearities in system responses, a novel structure of neural network i.e. computationally
+efficient neural network (CENN) has been implemented with the computationally efficient Levenberg-Marquardt (CELM) algorithm. The computationally efficient neural
+network structure (CENN) in conjunction with computationally efficient LevenbergMarquardt (CELM) estimator has utilized in a closed loop using a feedback linearizable
+controller (FBLC), which has been demonstrated to produce improved performance in
+terms of accuracy, convergence, and computational time than computationally efficient
+neural network structure (CENN) in conjunction with classical Levenberg-Marquardt
+(LM) estimator.
+\section{Literature Review}//
+\section{Methodology}//
+\subsection{Linear Quadratic Regulators(LQR)}//
+//The Linear Quadratic Regulator (LQR) is a control algorithm that allows a system to follow a desired trajectory while minimizing the energy needed to do so. It is an optimal control method that has wide applications in engineering, economics, and physics. The LQR algorithm is based on the concept of minimizing a quadratic cost function that represents the deviation of the system from the desired trajectory and the energy required to control the system.
+LQR has many applications in different fields, including:
+
+Aerospace engineering: LQR is used to control the attitude and position of spacecraft, missiles, and aircraft. Electrical engineering: LQR is used to control the power system frequency, voltage, and active and reactive power. Mechanical engineering: LQR is used to control the position and velocity of robots, cranes, and other mechanical systems. Chemical engineering: LQR is used to control the temperature, pressure, and flow rate of chemical reactions. Economics: LQR is used to control the level of inflation, unemployment, and exchange rate in an economy.
+LQR control systems have a number of desirable properties, including good performance in the presence of uncertainty and robustness to changes in the system's dynamics. They are widely used in a variety of applications, including aircraft control, robotics, and power systems.
+
+
+//
+\includegraphics[scale=1]{3.jpg}
+//
+
+
+However, LQR control systems have some limitations. For example, they are only applicable to systems that can be accurately modeled as linear, time-invariant systems. Additionally, LQR control systems may be sensitive to initialization, and may not be able to guarantee stability if the system's dynamics are not accurately known.
+
+Overall, LQR is a powerful and widely used control method that is well-suited for many types of systems. It is important for control engineers to understand the principles of LQR and how to apply them in order to design effective control systems.
+\subsubsection*{Properties of LQR}
+The Linear Quadratic Regulator (LQR) is a control algorithm that is used to find an optimal control policy for a linear time-invariant (LTI) system. The goal of LQR is to minimize a cost function that is a quadratic function of the system's state and control inputs, subject to the system's dynamics. There are several key properties of LQR that make it an effective control algorithm for a wide range of control problems:
+
+LQR is optimal: LQR provides the optimal control policy for a given system, in the sense that it minimizes the cost function over a given time horizon. This makes it an ideal choice for control problems where the goal is to optimize some performance criterion, such as minimizing energy consumption or maximizing accuracy.
+
+
+
+LQR is robust: LQR is relatively robust to uncertainties in the system's dynamics and external disturbances. This means that it can provide good performance even if the system's parameters are not known exactly, or if the system is subjected to external perturbations.
+
+LQR is simple and efficient: LQR can be implemented using simple linear algebraic equations, and it can be solved very efficiently using numerical methods. This makes it an attractive choice for control problems where computational resources are limited.
+
+LQR can handle multiple objectives: LQR can handle multiple objectives by weighting the different terms in the cost function differently. For example, if the goal is to minimize energy consumption while also maximizing accuracy, the cost function can be defined as a linear combination of these two objectives, with different weights assigned to each term.
+
+LQR can handle constraints: LQR can handle constraints on the control inputs or on the system's state by modifying the cost function to include penalty terms for violating the constraints.
+
+LQR can handle time-varying systems: LQR can be used to control systems that have time-varying dynamics by using a time-varying cost function.
+
+LQR can handle systems with multiple inputs and outputs: LQR can be extended to handle systems with multiple inputs and outputs by defining a cost function that depends on all of the inputs and outputs.
+
+
+
+
+
+
+
+\includegraphics[scale=1]{4.jpg}
+
+
+
+
+
+
+
+Despite these strengths, LQR has some limitations that should be considered when choosing a control algorithm. For example, LQR is only applicable to LTI systems, and it may not provide good performance for nonlinear systems or systems with time-varying dynamics. Additionally, LQR may not be appropriate for control problems with hard constraints or with multiple conflicting objectives.
+
+In summary, LQR is a powerful and widely used control algorithm that has several key properties that make it well-suited for a wide range of control problems. It is optimal, robust, simple and efficient, and can handle multiple objectives and constraints. However, it is only applicable to LTI systems, and may not be suitable for control problems with hard constraints or conflicting objectives.
+\subsection*{Advantages of LQR}
+The Linear Quadratic Regulator (LQR) is a control algorithm that is used to find an optimal control policy for a linear time-invariant (LTI) system. There are several advantages of using LQR for control problems:
+
+LQR is optimal: LQR provides the optimal control policy for a given system, in the sense that it minimizes the cost function over a given time horizon. This makes it an ideal choice for control problems where the goal is to optimize some performance criterion, such as minimizing energy consumption or maximizing accuracy.
+
+LQR is robust: LQR is relatively robust to uncertainties in the system's dynamics and external disturbances. This means that it can provide good performance even if the system's parameters are not known exactly, or if the system is subjected to external perturbations.
+
+LQR is simple and efficient: LQR can be implemented using simple linear algebraic equations, and it can be solved very efficiently using numerical methods. This makes it an attractive choice for control problems where computational resources are limited.
+
+LQR can handle multiple objectives: LQR can handle multiple objectives by weighting the different terms in the cost function differently. For example, if the goal is to minimize energy consumption while also maximizing accuracy, the cost function can be defined as a linear combination of these two objectives, with different weights assigned to each term.
+
+LQR can handle constraints: LQR can handle constraints on the control inputs or on the system's state by modifying the cost function to include penalty terms for violating the constraints.
+
+LQR can handle time-varying systems: LQR can be used to control systems that have time-varying dynamics by using a time-varying cost function.
+
+LQR can handle systems with multiple inputs and outputs: LQR can be extended to handle systems with multiple inputs and outputs by defining a cost function that depends on all of the inputs and outputs.
+
+In summary, LQR has several advantages that make it a powerful and widely used control algorithm. It is optimal, robust, simple and efficient, and can handle multiple objectives and constraints.
+\subsection*{Applications of LQR in Power system}
+LQR has been applied to a wide range of control problems in the power system industry, including the following:
+
+Power system stabilizers (PSS): Power system stabilizers (PSS) are devices that are used to damp oscillations in the power system. PSSs are typically used to stabilize oscillations in the power system that occur at low and intermediate frequencies (e.g., below 1 Hz). LQR has been used to design PSSs for a variety of power systems, including transmission systems, distribution systems, and microgrids.
+
+Generator excitation control: Generator excitation control is the process of adjusting the excitation of a generator to maintain a constant voltage at the generator terminal. LQR has been used to design excitation controllers for generators in power systems.
+
+Load frequency control: Load frequency control is the process of maintaining a constant frequency in the power system by adjusting the power output of generators. LQR has been used to design load frequency controllers for power systems.
+
+Transmission line voltage control: Transmission line voltage control is the process of maintaining a constant voltage on a transmission line by adjusting the power flows on the line. LQR has been used to design voltage controllers for transmission lines in power systems.
+
+Automatic generation control: Automatic generation control (AGC) is the process of maintaining a constant power balance in the power system by adjusting the power output of generators. LQR has been used to design AGC systems for power systems.
+
+
+
+\includegraphics[scale=1]{5.jpg}
+
+
+
+Reactive power control: Reactive power control is the process of adjusting the reactive power flow in the power system to maintain a constant voltage at the busbar. LQR has been used to design reactive power controllers for power systems.
+
+LQR has been applied to a wide range of control problems in the power system industry, including power system stabilizers, generator excitation control, load frequency control, transmission line voltage control, automatic generation control, and reactive power control.
+\subsection{Working of LQR}
+To understand how LQR works, let's consider a simple example of a mass-spring-damper system, shown in the figure below. The system consists of a mass m that is connected to a spring with spring constant k and a damper with damping coefficient c. The mass is subjected to an external force, u, which represents the control input. The position and velocity of the mass are denoted by x1 and x2, respectively.
+
+
+
+\includegraphics[scale=1]{2.jpg}
+
+
+
+The dynamics of the mass-spring-damper system can be described by the following differential equations:
+
+$$mx1'' + cx1' + kx1 = u$$
+
+where x1'' and x1' denote the second and first derivatives of x1, respectively.
+
+To control the mass-spring-damper system using LQR, we need to define the cost function, which is given by:
+
+$$\int = x^TQx + u^TRu$$
+
+where $x = [x1 x2]^T$ is the state vector and u is the control input vector. Q and R are weighting matrices for the state and control input terms, respectively. In this case, we can choose Q and R as follows:
+
+$$Q = [1 0; 0 1]$$
+$$R = 1$$
+
+The goal of LQR is to find the control input u that minimizes the cost function J. This is done by solving the algebraic Riccati equation (ARE), which gives the optimal control input for the system. The ARE for the mass-spring-damper system can be written as:
+
+$$A^T P + PA - PBR^-1B^TP + Q = 0$$
+
+where A and B are the system's state and input matrices, and P is the solution to the ARE. The state and input matrices for the mass-spring-damper system are given by:
+
+$$A = [0 1; -k/m -c/m]$$
+$$B = [0; 1/m]$$
+
+Solving the ARE gives the solution P, which can be used to compute the optimal control input u as follows:
+
+$$u = -R^-1B^TPx$$
+
+The control input u is then applied to the mass-spring-damper system to drive it from the initial state to the desired final state.
+
+LQR control systems have a number of desirable properties, including good performance in the presence of uncertainty and robustness to changes in the system's dynamics. They are widely used in a variety of applications, including aircraft control, robotics, and power systems.
+
+However, LQR control systems have some limitations. For example, they are only applicable to systems that can be accurately modeled as linear, time-invariant systems. Additionally, LQR control systems may be sensitive to initialization, and may not be able to guarantee stability if the system's dynamics are not accurately known. 
+
+
+
+\includegraphics[scale=1]{6.jpg}
+
+
+
+The LQR algorithm works by minimizing a quadratic cost function that represents the deviation of the system from the desired trajectory and the energy required to control the system. The cost function is defined as:
+
+$$J = \sum(x\_,i - x\_,d)^2 + \sum u\_,i^2$$
+
+where x\_,i is the current state of the system, x\_,d is the desired state of the system, and u\_,i is the control input applied to the system.
+
+The LQR algorithm calculates the optimal control inputs u\_,i
+that minimize the cost function. This is done by solving the Riccati equation, which is a nonlinear differential equation that represents the optimal control inputs for the system. The Riccati equation is given by:
+
+$$A^T P + PA - PBR^-1B^T P + Q = 0$$
+
+where A, B, and Q are the system matrices, R is the control weight matrix, and P is the solution matrix that represents the optimal control inputs.
+
+The LQR algorithm iteratively solves the Riccati equation and calculates the optimal control inputs until the cost function is minimized.
+\subsection{LQR Cost Function}
+The cost function for a linear quadratic regulator (LQR) control system is a measure of the system's performance. It is defined as the sum of the squares of the system's states and the control inputs, and is used to optimize the control inputs to achieve a desired behavior.
+
+The cost function for an LQR control system can be written as:
+
+$$J = x^TQx + u^TRu$$
+
+where x is the state vector, u is the control input vector, Q is a weighting matrix for the state terms, and R is a weighting matrix for the control input terms. The matrices Q and R are typically chosen to reflect the relative importance of the state and control input terms in the cost function.
+
+The goal of LQR is to find the control inputs that minimize the cost function. This is typically done by solving the algebraic Riccati equation (ARE), which provides a solution for the optimal control input. The solution to the ARE, P, can then be used to compute the optimal control input, u, as follows:
+
+$$u = -R^-1B^TPx$$
+
+where A and B are the system's state and input matrices, and P is the solution to the ARE.
+
+The cost function is an important part of the LQR control design process, as it determines the trade-offs that are made between different performance objectives. By carefully choosing the values of Q and R, the designer can control the balance between minimizing the state and control input terms, and can therefore tailor the system's behavior to meet specific performance goals.
+\subsection{State feedback controller}
+A state feedback controller is a type of control system that uses the current state of the system as feedback to determine the control input. The goal of a state feedback controller is to stabilize the system and ensure that it behaves as desired.
+
+In a state feedback controller, the control input is a function of the system's state variables (e.g., position, velocity, etc.), which are measured and used as feedback to determine the control input. The control input is chosen to stabilize the system and drive it towards the desired operating point.
+
+There are several advantages to using a state feedback controller:
+
+State feedback controllers can stabilize unstable systems: State feedback controllers can stabilize unstable systems by driving the system towards a stable operating point.
+
+State feedback controllers can improve the performance of a system: State feedback controllers can improve the performance of a system by driving it towards the desired operating point.
+
+
+
+\includegraphics[scale=1]{7.jpg}
+
+
+
+State feedback controllers can be designed using a variety of methods: There are many different methods that can be used to design a state feedback controller, including linear quadratic regulator (LQR), pole placement, and linear matrix inequalities (LMIs).
+
+State feedback controllers can handle systems with multiple inputs and outputs: State feedback controllers can be used to control systems with multiple inputs and outputs by defining the control input as a function
+\subsection{Linear Time Invariant System}
+A linear time-invariant (LTI) system is a system that satisfies the conditions of linearity and time-invariance. An LTI system can be represented by a set of differential equations that describe how the system's state variables evolve over time in response to a given input.
+
+Linear Quadratic Regulator (LQR) is a control algorithm that is used to find an optimal control policy for a linear time-invariant system. The goal of LQR is to minimize a cost function that is a quadratic function of the system's state and control inputs, subject to the system's dynamics. The optimal control input at each time step is determined by solving a set of algebraic equations known as the Riccati equation.
+
+
+
+\includegraphics[scale=1]{8.jpg}
+
+
+
+LQR is widely used in control systems because it provides a simple and efficient way to find the optimal control policy for a given system. It has been applied to a wide range of control problems, including the control of robots, aircraft, and spacecraft.
+
+
+
+To understand the basic principles of LQR, it is helpful to consider a simple example of an LTI system. Suppose we have a mass on a spring, as shown in the figure below. The mass is attached to a fixed point by a spring, and is subject to gravity. The position of the mass is denoted by x, and the force applied to the mass is denoted by u. The mass is also subject to a damping force, which is proportional to the velocity of the mass (denoted by x').
+
+[Insert figure of mass on spring here]
+
+The equations of motion for this system can be written as follows:
+
+$$mx'' + cx' + kx = u$$
+
+where m is the mass of the object, c is the damping coefficient, and k is the spring constant.
+
+Now suppose we want to control the position of the mass. We can do this by applying a force to the mass using a control input u. However, the control input will also affect the velocity of the mass, and we may not want the velocity to change too much. To account for this, we can define a cost function that penalizes both the position and the velocity of the mass. For example, we might define the cost function as follows:
+
+$$\int = \int(x^2 + x'^2)dt$$
+
+This cost function penalizes both the position and velocity of the mass. The goal of LQR is to find the control input u that minimizes this cost function, subject to the system's dynamics (i.e., the equations of motion).
+
+To solve the LQR problem, we first need to linearize the system's dynamics around an operating point. This involves linearizing the equations of motion and representing the system as a set of linear differential equations. We can then use the Riccati equation to find the optimal control input that minimizes the cost function.
+
+There are many variations of the LQR algorithm, and the specific form of the algorithm will depend on the specific problem being solved. However, the basic principles of LQR are the same for all systems: the goal is to find the control input that minimizes a quadratic cost function subject to the system's dynamics.
+\subsection{Riccatti Equation Derivation}
+The algebraic Riccati equation (ARE) is a nonlinear matrix equation that arises in the solution of linear quadratic optimal control problems. It plays a central role in the design of linear quadratic regulators (LQR) and other related control algorithms.
+
+The ARE can be derived as follows:
+
+Consider a linear, time-invariant system described by the following state-space equations:
+
+$$x' = Ax + Bu$$
+$$y = Cx$$
+
+where x is the state vector, u is the control input vector, y is the output vector, and A, B, and C are matrices that describe the system's dynamics.
+
+The goal of the control system is to find the control inputs that minimize a cost function defined as:
+
+$$J = integral(x^TQx + u^TRu) dt$$
+
+where Q and R are positive definite weighting matrices for the state and control input terms, respectively. The cost function represents a measure of the performance of the control system, and it is typically chosen to reflect the desired properties of the system's behavior.
+
+
+
+\includegraphics[scale=1]{9.jpg}
+
+
+
+To find the optimal control inputs, we can apply the principle of dynamic programming, which states that the optimal control at any given time can be found by considering the expected future cost-to-go and the current state of the system. This leads to the following Bellman equation:
+
+$$V(x) = min(u) {x^TQx + u^TRu + V(Ax + Bu)}$$
+
+where V(x) is the optimal value function, which gives the expected future cost-to-go for the system starting at state x.
+
+To solve the Bellman equation, we can define the matrix P as the solution to the following matrix equation:
+
+$$A^TP + PA - PBR^-1B^TP + Q = 0$$
+
+This equation is known as the algebraic Riccati equation (ARE). It is a nonlinear matrix equation that determines the optimal value function V(x) for the system.
+
+Once the solution P to the ARE is found, the optimal control input can be computed as:
+
+$$u = -R^-1B^TPx$$
+
+This control input minimizes the cost function J for the system.
+
+The ARE is a fundamental equation in the design of LQR and other related control algorithms, and it plays a key role in the optimization of control inputs for linear systems. It is important for control engineers to understand the principles of the ARE and how to solve it in order to design effective control systems.
+\subsection{LQR state space power station}
+In a power system, LQR can be used to control the generator's excitation and/or the power system stabilizers (PSS). The excitation control system is responsible for maintaining the stability of the generator's terminal voltage, while the PSS is used to improve the damping of the system's oscillations. Both the excitation control system and the PSS can be designed using LQR.
+
+To design an LQR control system for a power system, we need to define the system's state-space model. The state-space model describes the dynamics of the system in terms of a set of differential equations. For a power system, the state variables typically include the generator's rotor angle and speed, as well as the system's bus voltages and currents.
+
+The state-space model for a power system can be written as:
+
+$$x' = Ax + Bu$$
+$$y = Cx$$
+
+where x is the state vector, u is the control input vector, y is the output vector, and A, B, and C are matrices that describe the system's dynamics.
+
+To design the LQR control system, we need to specify the cost function, which is given by:
+
+$$\int = \int(x^TQx + u^TRu) dt$$
+
+where Q and R are positive definite weighting matrices for the state and control input terms, respectively. The cost function represents a measure of the performance of the control system, and it is typically chosen to reflect the desired properties of the system's behavior.
+
+
+
+\includegraphics[scale=1]{10.jpg}
+
+
+
+To find the optimal control inputs, we can apply the principle of dynamic programming, which states that the optimal control at any given time can be found by considering the expected future cost-to-go and the current state of the system. This leads to the following Bellman equation:
+
+$$V(x) = min(u) {x^TQx + u^TRu + V(Ax + Bu)}$$
+
+where V(x) is the optimal value function, which gives the expected future cost-to-go for the system starting at state x.
+
+To solve the Bellman equation, we can define the matrix P as the solution to the following matrix equation:
+
+$$A^TP + PA - PBR^-1B^TP + Q = 0$$
+
+This equation is known as the algebraic Riccati equation (ARE). It is a nonlinear matrix equation that determines the optimal value function V(x) for the system.
+
+Once the solution P to the ARE is found, the optimal control input can be computed as:
+
+$$u = -R^-1B^TPx$$
+
+This control input minimizes the cost function J for the system.
+\subsection{Implementation}
+ LQR can be implemented using the following steps:
+
+Formulate the control problem: The first step in implementing LQR is to formulate the control problem. This involves defining the system's dynamics, the cost function that is to be minimized, and any constraints on the control inputs or the system's state.
+
+Linearize the system: The next step is to linearize the system around the operating point. This involves approximating the system's nonlinear dynamics with a linear model.
+
+Discretize the system: If the system is continuous-time, it must be discretized before LQR can be applied. This involves discretizing the system's dynamics and the cost function using a suitable discretization method, such as the Euler method or the trapezoidal method.
+
+Solve the LQR problem: Once the control problem has been formulated and the system has been linearized and discretized (if necessary), the LQR problem can be solved using numerical optimization techniques. There are several methods that can be used to solve the LQR problem, including the Riccati equation, dynamic programming, and linear matrix inequalities (LMIs).
+
+Implement the control policy: Once the LQR problem has been solved, the control policy can be implemented by using the control inputs computed by the LQR algorithm. The control policy can be implemented in real-time using a digital controller or by using a suitable control hardware platform.
+
+Implementing LQR involves formulating the control problem, linearizing the system, discretizing the system (if necessary), solving the LQR problem, and implementing the control policy. LQR can be implemented using a variety of numerical optimization techniques and control hardware platforms.
+
+
+
+\section{Results}
+\section{Conclusion}
+
+
+\end{document}
